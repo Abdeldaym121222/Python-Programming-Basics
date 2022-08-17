@@ -1,0 +1,26 @@
+# integer
+print(type(10))   
+print(type(100))  
+print(type(-50))  
+
+# Floating Point Number
+print(type(100.9))  
+print(type(1.950950))  
+print(type(-100.9595))  
+
+# String
+print(type("Hello Python"))  
+
+# List
+print(type([1, 2, 3, 4, 5]))  
+
+# tuple 
+print(type((1, 2, 3, 4, 5)))  
+
+# dict 
+print(type({"One": 1, "Two": 2, "Three": 3}))  
+
+# Boolean
+print(type(2 == 2)) 
+print(type(7 <= 4)) 
+print(type(5 != 9)) 
