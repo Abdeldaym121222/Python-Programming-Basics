@@ -1,0 +1,21 @@
+# Variable_Name = Value
+
+# Variable Definition
+name = "Mohamed"  
+myName = "mohamed Ali"  
+my_name = "MohamedAli"  
+
+print(name)
+print(myName)
+print(my_name)
+
+
+# Reserved Words
+help("keywords")
+
+# Assignment multiple variables
+a, b, c = 1, 2, 3
+
+print(a,b)
+print(b)
+print(c)
