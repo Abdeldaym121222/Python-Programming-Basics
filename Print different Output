@@ -1,0 +1,42 @@
+# Print different Output
+
+# This is Comment
+# This is Inline Comment 
+
+# String
+print("I Love Python")
+print("-"*30)
+
+# String 
+"""
+This is
+Not Multiple
+Line Comments
+"""
+
+# integer
+print(10)
+print(100)  
+print(-50) 
+
+# Floating Point Number
+print(100.9) 
+print(1.950950)
+print(-100.9595) 
+
+# String
+print(type("Hello Python"))  
+
+# List
+print([1, 2, 3, 4, 5])
+
+# tuple 
+print((1, 2, 3, 4, 5))
+
+# dict 
+print({"One": 1, "Two": 2, "Three": 3})
+
+# Boolean
+print((2 == 2)) 
+print((7 <= 4)) 
+print((5 != 9))  
