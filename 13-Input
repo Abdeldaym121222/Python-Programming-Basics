@@ -1,0 +1,10 @@
+# ---------------------------------------
+#            User Input 
+# ---------------------------------------
+
+fName = input('What\'s Is Your First Name?')
+print(fName)
+
+
+x = (int)(input("enter number : "))
+print(x*3)
