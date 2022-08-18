@@ -1,0 +1,63 @@
+"""
+Example 4
+Calculates the area of the triangle.
+"""
+#input
+base = 5
+height = 7
+
+#processing
+Area = 0.5*base*height
+
+#output
+print(Area)
+#-------------------------------------------------------------------------------
+"""
+Example 5
+Calculates the area of square
+"""
+#input
+length = 7
+
+#processing
+Area = length*length
+
+# Output
+print(Area)
+#-------------------------------------------------------------------------------
+"""
+Example 6
+Takes five number input from the user and determines their Average .
+"""
+
+# Enter five input from user
+x1 = (int)(input("enter number 1 : "))
+x2 = (int)(input("enter number 2 : "))
+x3 = (int)(input("enter number 3 : "))
+x4 = (int)(input("enter number 4 : "))           
+x5 = (int)(input("enter number 5 : "))
+
+# sum of five numbers
+summation = x1+x2+x3+x4+x5
+
+# average
+avg = summation/5
+
+# output
+print(avg)
+
+#-------------------------------------------------------------------------------
+"""
+Example 7
+ 
+converts the length in feet to centimeter, you can Calculate the length in cm
+(LCM) by multiplying length in feet (Lft) with 30.
+"""
+# input
+Length_feet = float(input("Enter Length : "))
+
+#processing
+Length_CM = Length_feet * 30
+
+#output
+print(Length_CM)
