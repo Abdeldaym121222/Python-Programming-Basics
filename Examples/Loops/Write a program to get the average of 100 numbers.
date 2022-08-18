@@ -1,0 +1,15 @@
+"""
+Example 3
+
+Write a program to get the average of 100 numbers.
+"""
+import numpy as np
+sum1 = 0 
+avg1 = 0
+for i in range(1,101):
+    x = np.random.randint(1,101) #random number between 1 && 100
+    print(x)
+    sum1 +=x
+
+avg = sum1/100
+print(avg)
