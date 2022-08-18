@@ -1,0 +1,24 @@
+"""
+Example 8
+
+Accepts two numbers and computes their sum, difference, product, Quotient
+and Remainder.
+"""
+
+# input
+num1 = 9
+num2 = 5
+
+# processing
+summation = num1+num2
+difference = num1-num2
+product = num1*num2
+Quotient = num1/num2
+Remainder = num1%num2
+
+# Output
+print(summation)
+print(difference)
+print(product)
+print(Quotient)
+print(Remainder)
