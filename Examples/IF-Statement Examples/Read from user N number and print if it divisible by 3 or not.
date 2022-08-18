@@ -1,0 +1,15 @@
+#-------------------------------------------------------------------------------
+"""
+Example 10
+
+Read from user N number and print if it divisible by 3 or not. 
+"""
+
+# Enter one input from user
+x = (int)(input("enter number 1 : "))
+
+if x%3==0:
+    print("Number is divided by three")
+else:
+    print("Number is not divided by three")
+
