@@ -1,0 +1,24 @@
+# -----------------------------
+#           Tuple 
+# -----------------------------
+
+# Tuple Syntax & Type Test
+myAwesomeTupleOne = ("Osama", "Ahmed")
+myAwesomeTupleTwo = "Osama", "Ahmed"
+print(myAwesomeTupleOne)
+print(myAwesomeTupleTwo)
+
+# Tuple Indexing
+myAwesomeTupleThree = (1, 2, 3, 4, 5)
+print(myAwesomeTupleThree[0])
+print(myAwesomeTupleThree[-1])
+
+# Tuple Data
+myAwesomeTupleFive = ("Osama", "Osama", 1, 2, 3, 100.5, True)
+print(myAwesomeTupleFive[1])
+print(myAwesomeTupleFive[-1])
+
+
+
+
+
