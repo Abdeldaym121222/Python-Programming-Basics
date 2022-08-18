@@ -1,0 +1,21 @@
+"""
+Example 13
+    
+Write a program in python that reads three scores of a student in three tests to 
+compute and display the sum of the best-two scores.
+"""
+
+# Enter three input from user
+x = (int)(input("enter number 1 : "))
+y = (int)(input("enter number 2 : "))
+z = (int)(input("enter number 3 : "))
+
+
+summation = x+y+z
+
+if x<=y and x<=z:
+    print(summation-x)
+elif y<x and y<=z:
+    print(summation-y)
+else:
+    print(summation-z)
