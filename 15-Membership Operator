@@ -1,0 +1,39 @@
+# ------------------------------------------------------
+#              Membership Operators 
+# ------------------------------------------------------
+# in
+# not i
+
+# String
+name = "mostafa"
+print("s" in name)
+print("a" in name)
+print("A" in name)
+
+
+# List
+friends = ["Ahmed", "Sayed", "Mahmoud"]
+print("Osama" in friends)
+print("Sayed" in friends)
+print("Mahmoud" not in friends)
+
+
+# Using In and Not In With Condition
+country1 = ["Egypt", "KSA", "Kuwait", "Bahrain", "Syria"]
+country1_Discount = 80
+
+country2 = ["Italy", "USA"]
+country2_Discount = 50
+
+myCountry = "Italy"
+
+if myCountry in country1:
+  print(f"Hello You Have A Discount Equal To ${country1_Discount}")
+
+elif myCountry in country2:
+
+  print(f"Hello You Have A Discount Equal To ${country2_Discount}")
+
+else:
+
+  print("You Have No Discount")
