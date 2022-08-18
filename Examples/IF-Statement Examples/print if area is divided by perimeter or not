@@ -1,0 +1,23 @@
+#-------------------------------------------------------------------------------
+"""
+Example 11
+
+Program that take from user length of square and calculate area and perimeter
+then print if area is divided by perimeter or not.
+"""
+
+# Enter Length input from user
+Length = (int)(input("enter number 1 : "))
+
+# processing
+Area = Length * Length
+perimeter = 4 * Length
+
+# condition
+if( Area % perimeter == 0):
+    #output
+    print("area is divided by perimeter")
+else:
+    #output
+    print("area is not divided by perimeter")
+    
