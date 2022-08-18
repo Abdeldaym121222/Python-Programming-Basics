@@ -1,0 +1,28 @@
+"""
+Example 12
+
+First show the user list of options .
+1) Addition
+2) Subtraction
+3) Multiplication
+4) Division
+5) Modulus
+6) Exit
+"""
+
+x = (int)(input("enter number : "))
+num1 = (int)(input("enter number 1 : "))
+num2 = (int)(input("enter number 2 : "))
+
+if x==1:
+    print(num1+num2)
+elif x==2:
+    print(num1-num2)
+elif x==3:
+    print(num1*num2)
+elif x==4:
+    print(num1/num2)
+elif x==5:
+    print(num1%num2)
+else:
+    print("exit")
