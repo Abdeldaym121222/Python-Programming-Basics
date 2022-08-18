@@ -1,0 +1,32 @@
+# -------------------------------------------
+#              IF-Statement  
+# -------------------------------------------
+
+x = 10
+if x == 10:
+  print("X : "+str(x))
+
+elif x > 10:
+  print("X : "+str(x))
+  
+else:
+    print("other")
+    
+    
+# Nested If
+z = -8
+if(z%3==0):
+    if(z>0):
+        print("Accept to 3 & Positive")
+    else:
+        print("Accept to 3 & Negative")
+else:
+    print("Not Accept to 3")
+
+# Ternary Condition
+country = "A"
+if country == "Egypt" : print(f"The Weather in {country} Is 15")
+elif country == "KSA" : print(f"The Weather in {country} Is 30")
+else : print("Country is Not in The List")
+
+
