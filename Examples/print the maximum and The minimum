@@ -1,0 +1,24 @@
+"""
+Example 9
+
+Read 3 numbers from user and print the maximum and The maximum
+"""
+
+# Enter five input from user
+x = (int)(input("enter number 1 : "))
+y = (int)(input("enter number 2 : "))
+z = (int)(input("enter number 3 : "))
+
+if x>=y and x>=z:
+    print("maximum : X")
+elif y>x and y>=z:
+    print("maximum : Y")
+else:
+    print("maximum : z")
+    
+if x<=y and x<=z:
+    print("minimum : X")
+elif y<x and y<=z:
+    print("minimum : Y")
+else:
+    print("minimum : z")
