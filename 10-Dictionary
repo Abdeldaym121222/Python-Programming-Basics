@@ -1,0 +1,108 @@
+# --------------------------------------------
+#                 Dictionary
+# --------------------------------------------
+
+# Dictionary
+user = {
+  "name": "Mohamed",
+  "age": 36,
+  "country": "Egypt",
+  "skills": ["Html", "Css", "JS"],
+  "rating": 10.5
+}
+
+print(user)
+print(user['country'])
+print(user.get("country"))
+
+print(user.keys())
+print(user.values())
+
+# Two-Dimensional Dictionary
+languages = {
+  "One": {
+    "name": "Html",
+    "progress": "80%"
+  },
+  "Two": {
+    "name": "Css",
+    "progress": "90%"
+  },
+  "Three": {
+    "name": "Js",
+    "progress": "90%"
+  }
+}
+
+print(languages)
+print(languages['One'])
+print(languages['Three']['name'])
+
+# Dictionary Length
+print(len(languages))
+print(len(languages["Two"]))
+
+# Create Dictionary From Variables
+frameworkOne = {
+  "name": "Vuejs",
+  "progress": "80%"
+}
+
+frameworkTwo = {
+  "name": "ReactJs",
+  "progress": "80%"
+}
+
+frameworkThree = {
+  "name": "Angular",
+  "progress": "80%"
+}
+
+allFramework = {
+  "one": frameworkOne,
+  "two": frameworkTwo,
+  "three": frameworkThree
+}
+
+print(allFramework)
+
+# clear()
+user = {
+  "name": "ali"
+}
+print(user)
+user.clear()
+print(user)
+
+print("=" * 50)
+
+# update()
+member = {
+  "name": "mohamed"
+}
+print(member)
+member["age"] = 36
+print(member)
+
+member.update({"country": "Egypt"})
+print(member)
+
+print("=" * 50)
+
+# copy()
+main = {
+  "name": "ali"
+}
+b = main.copy()
+print(b)
+
+# update
+main.update({"skills": "Fighting"})
+print(main)
+print(b)
+
+
+dic = {1:"one",2:"two"}
+print(dic)
+print(dic.keys())
+print(dic.values())
