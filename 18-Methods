@@ -1,0 +1,83 @@
+# ------------------------------------------------
+# ----------- Function And Return ----------------
+# ------------------------------------------------
+
+# Method sum two Numbers
+def sum2Num(x , y):
+    z = x+y
+    return z
+
+x , y = 9 , 5
+print(sum2Num(x, y))
+
+# Method Packing
+myList = [1, 2, 3, 5]
+print(myList)
+print(*myList)
+
+def say_hello(*peoples):  # n1, n2, n3, n4
+  for name in peoples:
+    print(f"Hello {name}")
+say_hello("hassan", "Ahmed", "Sayed", "Mahmoud")
+
+# Method Calculate every digit in number
+# 1998 --> 1+9+9+8 = 27
+def sumDigit(num):
+    str1 = str(num)
+    summation = 0
+    for i in range(0,len(str1)):
+        summation += int(str1[i])
+    return summation
+
+x = 1998
+print(sumDigit(x))
+
+# Method Calculate every digit in number
+# 1998 --> 1+9+9+8 = 27
+def modDigit(num1):
+    sum1 = 0
+    i = 10
+    while i <= 10000:
+        sum1 += (num1 % i)//(i/10)
+        i *=10
+    return sum1
+    
+x = 1998
+print(modDigit(x))
+
+# way the Solution
+print(x%10) # 8
+print((x%100)//10)# 9
+print((x%1000)//100)# 9
+print((x%10000)//1000)# 1
+
+    
+# Method print repetation of symbol
+def repeateSymbol(symbol , num):
+    print(symbol*num)
+    
+repeateSymbol("#",20)
+
+
+# method take number and print zeros according to number
+def zeros(num1):
+    print("0"*num1)
+zeros(5)
+
+
+def cleanWord(word):
+
+  if len(word) == 1:
+    return word
+  print(f"Print Start Function {word}")
+
+  if word[0] == word[1]:
+    print(f"Print Before Condition {word}")
+    return cleanWord(word[1:])
+  print(f"Print Before Return {word}")
+
+  return word[0] + cleanWord(word[1:])
+
+  # Stash [ World ]
+
+print(cleanWord("WWWoooorrrldd"))
