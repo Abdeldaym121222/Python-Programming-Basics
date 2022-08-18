@@ -23,3 +23,6 @@ population5Years = birth + death + immigrant
 
 # total population After 5 years
 total = population + population5Years
+
+# Show Result
+print(total)
