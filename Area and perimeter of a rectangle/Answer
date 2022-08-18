@@ -1,0 +1,16 @@
+"""
+Example 1:
+    
+(Area and perimeter of a rectangle) Write a program that displays the area and
+perimeter of a rectangle with a width of 5.3 and height of 8.6 using the following
+formula: area = width * height perimeter = 2 * (width + height)
+"""
+
+width = 8.5
+height = 5
+
+Area = width * height
+perimeter = 2*(width+height)
+
+print("Area : "+str(Area))
+print("perimeter : "+str(perimeter))
