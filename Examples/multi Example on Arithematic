@@ -1,0 +1,319 @@
+# Examples on Arithematic Operator
+
+"""
+Example 1:
+    
+(Area and perimeter of a rectangle) Write a program that displays the area and
+perimeter of a rectangle with a width of 5.3 and height of 8.6 using the following
+formula: area = width * height perimeter = 2 * (width + height)
+"""
+
+width = 8.5
+height = 5
+
+Area = width * height
+perimeter = 2*(width+height)
+
+print("Area : "+str(Area))
+print("perimeter : "+str(perimeter))
+
+
+# ------------------------------------------------------------------------------
+"""
+Example 2:
+    
+(Population projection) The U.S. Census Bureau projects population based on the
+following assumptions: ■■ One birth every 7 seconds ■■ One death every 13 seconds
+■■ One new immigrant every 45 seconds Write a program to display the population
+for each of the next five years. Assume that the current population is 312,032,486, and
+one year has 365 days. Hint: In Java, if two integers perform division, the result is an
+integer. The fractional part is truncated. For example, 5 / 4 is 1 (not 1.25) and 10 / 4 is
+2 (not 2.5). To get an accurate result with the fractional part, one of the values
+involved in the division must be a number with a decimal point. For example, 5.0 / 4
+is 1.25 and 10 / 4.0 is 2.5.
+"""
+
+population = 312032486
+seconds_in_5years = 5 * 365 * 24 * 60 * 60
+birth = seconds_in_5years / 7.0
+death = seconds_in_5years / 13.0
+immigrant = seconds_in_5years / 45.0
+
+# New population
+population5Years = birth + death + immigrant
+
+# total population After 5 years
+total = population + population5Years
+
+# Show Result
+print(total)
+ 
+#-------------------------------------------------------------------------------
+"""
+Example 3
+(Average speed in kilometers) Assume that a runner runs 24 miles in 1 hour, 40
+minutes, and 35 seconds. Write a program that displays the average speed in
+kilometers per hour. (Note 1 mile is equal to 1.6 kilometers.)
+"""
+
+#input
+distance = 24*1.6
+time = 1+(40/60)+((35/60)/60)
+
+#Processing
+speed = distance / time
+
+#output
+print(speed)
+
+#-------------------------------------------------------------------------------
+"""
+Example 4
+Calculates the area of the triangle.
+"""
+#input
+base = 5
+height = 7
+
+#processing
+Area = 0.5*base*height
+
+#output
+print(Area)
+#-------------------------------------------------------------------------------
+"""
+Example 5
+Calculates the area of square
+"""
+#input
+length = 7
+
+#processing
+Area = length*length
+
+# Output
+print(Area)
+#-------------------------------------------------------------------------------
+"""
+Example 6
+Takes five number input from the user and determines their Average .
+"""
+
+# Enter five input from user
+x1 = (int)(input("enter number 1 : "))
+x2 = (int)(input("enter number 2 : "))
+x3 = (int)(input("enter number 3 : "))
+x4 = (int)(input("enter number 4 : "))           
+x5 = (int)(input("enter number 5 : "))
+
+# sum of five numbers
+summation = x1+x2+x3+x4+x5
+
+# average
+avg = summation/5
+
+# output
+print(avg)
+
+#-------------------------------------------------------------------------------
+"""
+Example 7
+ 
+converts the length in feet to centimeter, you can Calculate the length in cm
+(LCM) by multiplying length in feet (Lft) with 30.
+"""
+# input
+Length_feet = float(input("Enter Length : "))
+
+#processing
+Length_CM = Length_feet * 30
+
+#output
+print(Length_CM)
+
+#-------------------------------------------------------------------------------
+"""
+Example 8
+
+Accepts two numbers and computes their sum, difference, product, Quotient
+and Remainder.
+"""
+
+# input
+num1 = 9
+num2 = 5
+
+# processing
+summation = num1+num2
+difference = num1-num2
+product = num1*num2
+Quotient = num1/num2
+Remainder = num1%num2
+
+# Output
+print(summation)
+print(difference)
+print(product)
+print(Quotient)
+print(Remainder)
+
+#-------------------------------------------------------------------------------
+"""
+Example 9
+
+Read 3 numbers from user and print the maximum and The maximum
+"""
+
+# Enter three input from user
+x = (int)(input("enter number 1 : "))
+y = (int)(input("enter number 2 : "))
+z = (int)(input("enter number 3 : "))
+
+if x>=y and x>=z:
+    print("maximum : X")
+elif y>x and y>=z:
+    print("maximum : Y")
+else:
+    print("maximum : z")
+    
+if x<=y and x<=z:
+    print("minimum : X")
+elif y<x and y<=z:
+    print("minimum : Y")
+else:
+    print("minimum : z")
+
+#-------------------------------------------------------------------------------
+"""
+Example 10
+
+Read from user N number and print if it divisible by 3 or not. 
+"""
+
+# Enter one input from user
+x = (int)(input("enter number 1 : "))
+
+if x%3==0:
+    print("Number is divided by three")
+else:
+    print("Number is not divided by three")
+
+#-------------------------------------------------------------------------------
+"""
+Example 11
+
+Read 3 sides of triangle from user and print if triangle is equilateral(l1=l2=l3)or
+Isosceles (any two sides are equal) or different.
+"""
+
+# Enter three input from user
+x = (int)(input("enter number 1 : "))
+y = (int)(input("enter number 2 : "))
+z = (int)(input("enter number 3 : "))
+
+if x==y and y==z:
+    print("triangle is equilateral")
+elif x==y or x==z or y==z:
+    print("triangle is Isosceles")
+else:
+    print("triangle is different")
+    
+#-------------------------------------------------------------------------------
+"""
+Example 11
+
+Program that take from user length of square and calculate area and perimeter
+then print if area is divided by perimeter or not.
+"""
+
+# Enter Length input from user
+Length = (int)(input("enter number 1 : "))
+
+# processing
+Area = Length * Length
+perimeter = 4 * Length
+
+# condition
+if( Area % perimeter == 0):
+    #output
+    print("area is divided by perimeter")
+else:
+    #output
+    print("area is not divided by perimeter")
+
+#-------------------------------------------------------------------------------
+"""
+Example 12
+
+First show the user list of options .
+1) Addition
+2) Subtraction
+3) Multiplication
+4) Division
+5) Modulus
+6) Exit
+"""
+
+x = (int)(input("enter number : "))
+num1 = (int)(input("enter number 1 : "))
+num2 = (int)(input("enter number 2 : "))
+
+if x==1:
+    print(num1+num2)
+elif x==2:
+    print(num1-num2)
+elif x==3:
+    print(num1*num2)
+elif x==4:
+    print(num1/num2)
+elif x==5:
+    print(num1%num2)
+else:
+    print("exit")
+ 
+#-------------------------------------------------------------------------------
+"""
+Example 13
+    
+Write a program in python that reads three scores of a student in three tests to 
+compute and display the sum of the best-two scores.
+"""
+
+# Enter three input from user
+x = (int)(input("enter number 1 : "))
+y = (int)(input("enter number 2 : "))
+z = (int)(input("enter number 3 : "))
+
+
+summation = x+y+z
+
+if x<=y and x<=z:
+    print(summation-x)
+elif y<x and y<=z:
+    print(summation-y)
+else:
+    print(summation-z)
+    
+    
+        
+# what will be the output of the following
+
+number = 4;
+alpha = -1.0;
+if (number > 5):
+    if (alpha > 0):
+        print("Here I am!")
+    else:
+        {
+        print( "No, I’m here!" )
+        }
+print("No, actually, I’m here!" ) # No, actually, I’m here!
+
+#--------------------------------------------
+
+a=-1
+b=1
+c = not a and b
+d = not a or b
+print(c) # false
+print(d) # 1
